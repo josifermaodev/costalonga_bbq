@@ -1,0 +1,64 @@
+
+.apresentacao{
+    background-image: url('/images/apresentacao.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.apresentacao_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.apresentacao_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--cor-quatro);
+    border-radius: 1rem;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.logo{
+    width: 10rem;
+    height: auto;
+}
+
+.apresentacao_text{
+    padding-top: 1rem;
+}
+
+.botao_apresentacao{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: var(--cor-um);
+    color: var(--cor-dois);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao_apresentacao:hover{
+    background: var(--cor-cinco);
+    color: var(--cor-seis)
+}
+
+@media (max-width: 768px){
+    .apresentacao{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,91 @@
+
+/* Estilização geral */
+
+section.sobre_nos {
+    display: flex; /* Coloca as duas divs em linha */
+    flex-wrap: wrap; /* Permite que as divs se ajustem no caso de telas menores */
+    background-color: var(--cor-sete); /* Ocupa a altura total da tela */
+    width: 100%;
+    height: auto;
+}
+
+.sobre_infos,
+.sobre_imagen {
+    flex: 1; /* Cada div ocupa 50% da largura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-left: 4rem;
+}
+
+/* Estilização para .sobre_infos */
+.sobre_infos {
+    flex-direction: column; 
+}
+
+.sobre_titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.sobre_subtitulo {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.sobre_texto {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Estilização para .sobre_imagen */
+.sobre_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empresa_img {
+    width: 60%; /* Define o tamanho da imagem */
+    height: auto;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section.sobre_nos {
+        flex-direction: column; /* Coloca as divs em coluna para telas menores */
+    }
+
+    .sobre_infos {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .empresa_img {
+        width: 80%; /* Define o tamanho da imagem */
+        height: auto;
+    }
+
+    .sobre_infos,
+    .sobre_imagen {
+    flex: 1; /* Cada div ocupa 50% da largura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-left: 2rem;
+}
+
+}    

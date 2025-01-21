@@ -1,0 +1,48 @@
+@import url(/styles/header.css);
+@import url(/styles/apresentacao.css);
+@import url(/styles/sobre.css);
+
+:root {
+    --cor-um: #6E300D;
+    --cor-dois: #FFE5D2;
+    --cor-tres: #EEA875;
+    --cor-quatro: rgba(238, 238, 238, 0.8);
+    --cor-cinco: #C26825;
+    --cor-seis: #1E324A;
+    --cor-sete: #EEEEEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--cor-cinco);
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.instagram{
+    display: none;
+}
+.google{
+    display: none;
+}
+
+
+

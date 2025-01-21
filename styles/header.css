@@ -1,0 +1,41 @@
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--cor-um);
+    padding: 1.5rem;
+}
+
+.nome {
+    font-size: 2rem;
+    color: var(--cor-dois);
+    font-weight: bold;
+}
+
+.link_tel{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.image_icon_whatsapp{
+    max-width: 3rem;
+    
+}
+
+.tel{
+    font-size: 1.5rem;
+    color: var(--cor-dois);
+    padding-left: 1.2rem;
+}
+
+@media (max-width: 768px){
+    .tel{
+        display: none;
+    }
+}
